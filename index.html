@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a lawyer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header container p-2" id="header">
+        <div class="row">
+            <div class="col-6">
+                <img src="resources/logo.png" alt="LegalMatch">
+                <span class="company-tagline">FIND THE RIGHT LAWYER NOW</span>
+            </div>
+            <div class="col"></div>
+            <div class="advantages col-4">
+                <div>
+                    <i class="bi bi-check-lg"></i> No fee to present your case
+                </div>
+                <div>
+                    <i class="bi bi-check-lg"></i> Choose lawyers from your area
+                </div>
+                <div>
+                    <i class="bi bi-check-lg"></i> A 100% confidential service
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-container p-3">
+        <div class="content" id="content">
+            <div class="row">
+                <h1 class="montserrat fw-light">Find a Lawyer for your Legal Issue</h1>
+                <h3 class="fw-bold">Fast, Free and Confidential</h3>
+            </div>
+            <div class="row">
+                <div class="col d-flex align-items-center">
+                        <form action="" autocomplete="off">
+                                <label class="fs-6 fw-bold" for="city"><i class="bi bi-1-circle-fill fs-4"></i> Enter Zip Code or City:</label>
+                                <input class="form-control" type="text" name="city" id="city" placeholder="Does not have to be where you live">
+                            
+                            <div class="mb-3" id="result"></div>
+                            <label class="fs-6 fw-bold" for="category"><i class="bi bi-2-circle-fill fs-4"></i> Choose a category:</label>
+                                <select class="mb-3 form-select" name="category" id="category">
+                                    <option value="">Click to choose a legal category</option>
+                                    <option value="Family">Family</option>
+                                </select>
+                            <p class="fs-6 text-center">Can't find your category? <a href="#" id="other-category-link">Click here.</a></p>
+                        </form>
+                </div>
+                <div class="review-list col" id="review-list">
+                    <p>Clients review LegalMatch lawyers</p>
+                    <div class="review">
+                        <div class="lawyer-profile">
+                            <img src="resources/bbb.png" alt="">
+                            <span>Mitchell M.</span>
+                            <span>Cherry Hill, NJ</span>
+                        </div>
+                        <p>Family Law 5</p>
+                        <p class="review-text">Lorem Ipsum</p>
+                        <a href="#">Read Review</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="footer p-2" id="footer">
+        <img src="resources/logo.png" alt="LegalMatch">
+        <span class="company-tagline">FIND THE RIGHT LAWYER NOW</span>
+        <a href="#" id="user-agreement">User Agreement</a>
+        <a href="#" id="privacy-policy">Privacy Policy</a>
+        <a href="#" id="site-map">Site Map</a>
+        <img src="resources/trust.png" alt="TRUSTe VERFIED">
+        <img src="resources/bbb.png" alt="BBB Rating: A+">
+    </div>
+    <div class="modal" id="issues-container">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div>
+                <p>3) Which Family law issue(s) apply to your case?</p>
+                <input type="checkbox" id="adoptions" name="issues" value="Adoptions">
+                <label for="adoptions">Adoptions</label>
+                <input type="checkbox" id="guardianship" name="issues" value="Guardianship">
+                <label for="guardianship">Guardianship</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="review-container">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>CLIENT REVIEWS</h1>
+            <hr>
+            <div class="lawyer-profile">
+                <img src="resources/bbb.png" alt="">
+                <p>Mitchell M.</p>
+                <p>Cherry Hill, NJ</p>
+                <p>Family Law 5</p>
+            </div>
+            <h2>Rating (29 users) 5</h2>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Overall</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Responded in a timely manner</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <p id="reviewer">5 by Dexter Marchal, 06/10/2016</p>
+            <p>Deb did a great job. Got my bench warrant set aside... was sure I was going to jail... phew. Judge seemed to respect her and I got what I</p>
+            <a href="#" class="close">Close</a>
+        </div>
+    </div>
+    <div class="modal" id="other-categories-container">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div>
+                <h1>OTHER CATEGORIES</h1>
+                <p>Choose the category that best fits your case</p>
+                <table>
+                    <tr>
+                        <td><a href="#">Abuse (Child, Domestic, Sexual)</a></td>
+                        <td><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, facilis consequatur asperiores necessitatibus architecto dolorum saepe deserunt qui quidem ratione deleniti, id officiis reiciendis fugiat eveniet! Repellendus cupiditate impedit quibusdam!</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- for modal -->
+    <div class="overlay hidden"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
