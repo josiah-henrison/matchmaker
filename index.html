@@ -38,10 +38,10 @@
             </div>
             <div class="row">
                 <div class="col d-flex align-items-center">
-                        <form action="" autocomplete="off">
+                    <div class="flex-grow-1">
+                        <form class="w-75" action="" autocomplete="off">
                                 <label class="fs-6 fw-bold" for="city"><i class="bi bi-1-circle-fill fs-4"></i> Enter Zip Code or City:</label>
                                 <input class="form-control" type="text" name="city" id="city" placeholder="Does not have to be where you live">
-                            
                             <div class="mb-3" id="result"></div>
                             <label class="fs-6 fw-bold" for="category"><i class="bi bi-2-circle-fill fs-4"></i> Choose a category:</label>
                                 <select class="mb-3 form-select" name="category" id="category">
@@ -50,19 +50,72 @@
                                 </select>
                             <p class="fs-6 text-center">Can't find your category? <a href="#" id="other-category-link">Click here.</a></p>
                         </form>
+                    </div>
                 </div>
-                <div class="review-list col" id="review-list">
-                    <p>Clients review LegalMatch lawyers</p>
-                    <div class="review">
-                        <div class="lawyer-profile">
+                <div class="review-list col montserrat" id="review-list">
+                    <p class="nunito-sans fs-5">Clients review LegalMatch lawyers</p>
+                    <div class="review d-flex border-bottom mb-1">
+                        <div class="lawyer-profile text-center p-1">
                             <img src="resources/bbb.png" alt="">
-                            <span>Mitchell M.</span>
-                            <span>Cherry Hill, NJ</span>
+                            <div class="name">Mitchell M.</div>
+                            <div class="address">Cherry Hill, NJ</div>
                         </div>
-                        <p>Family Law 5</p>
-                        <p class="review-text">Lorem Ipsum</p>
-                        <a href="#">Read Review</a>
-                        <hr>
+                        <div class="featured-review p-1 flex-grow-1">
+                            <p class="category">Family Law 
+                                &nbsp;&nbsp;&nbsp;
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </p>
+                            <p class="review-text">Lorem Ipsum</p>
+                            <div class="d-flex flex-row-reverse">
+                                <a href="#">Read Review &nbsp;<i class="bi bi-book"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review d-flex border-bottom mb-1">
+                        <div class="lawyer-profile text-center p-1">
+                            <img src="resources/bbb.png" alt="">
+                            <div class="name">Mitchell M.</div>
+                            <div class="address">Cherry Hill, NJ</div>
+                        </div>
+                        <div class="featured-review p-1 flex-grow-1">
+                            <p class="category">Family Law 
+                                &nbsp;&nbsp;&nbsp;
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </p>
+                            <p class="review-text">Lorem Ipsum</p>
+                            <div class="d-flex flex-row-reverse">
+                                <a href="#">Read Review &nbsp;<i class="bi bi-book"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review d-flex border-bottom mb-1">
+                        <div class="lawyer-profile text-center p-1">
+                            <img src="resources/bbb.png" alt="">
+                            <div class="name">Mitchell M.</div>
+                            <div class="address">Cherry Hill, NJ</div>
+                        </div>
+                        <div class="featured-review p-1 flex-grow-1">
+                            <p class="category">Family Law 
+                                &nbsp;&nbsp;&nbsp;
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </p>
+                            <p class="review-text">Lorem Ipsum</p>
+                            <div class="d-flex flex-row-reverse">
+                                <a href="#">Read Review &nbsp;<i class="bi bi-book"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>  

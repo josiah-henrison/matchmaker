@@ -18,6 +18,10 @@ th {
     font-family: Montserrat, sans-serif;
 }
 
+.nunito-sans {
+    font-family: Nunito Sans, sans-serif;
+}
+
 .header, input, select, #result {
     font-family: Montserrat, sans-serif;
 }
@@ -53,11 +57,45 @@ th {
 }
 
 form i {
-    color: gold;
+    color: goldenrod;
+}
+
+.lawyer-profile img {
+    border-radius: 50%;
+}
+
+.lawyer-profile .name {
+    font-size: small;
+    font-weight: bold;
+}
+
+.lawyer-profile .address {
+    font-size: small;
+}
+
+.featured-review {
+    font-size: 12px;
+}
+
+.featured-review .category {
+    font-weight: bold;
+}
+
+.featured-review i {
+    color: goldenrod;
 }
 
 .review-text {
     font-style: italic;
+}
+
+.featured-review a {
+    color: gold;
+    text-decoration: none;
+}
+
+.featured-review a:hover {
+    color: goldenrod;
 }
 
 #result {
